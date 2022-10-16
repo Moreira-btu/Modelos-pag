@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, ul,a,li{
+            padding: 0px;
+            list-style:none;
+            margin: 0px;
+            font-size: 1.2rem;
+            font-family: arial;
+
+            
+        }
+        * {
+            text-decoration: none;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            align-items: center;
+
+        }
+        #logo {
+            padding: 10px;
+        }
+        .menu {
+            display:flex;
+            padding: 10px;
+
+        }
+        .menu li a {
+            text-decoration: none;
+            color: white;
+        }
+        .menu li {
+            list-style: none;
+            margin-left: 10px;
+            color: white;
+            display: block;
+            padding: 20px;
+        }
+        a {
+            color: white;
+        }
+        @media(max-width:400px){
+            
+        }
+        #img-01{
+            display: flex;
+            width: 150px;
+            height: 100px;
+            border: 5px solid black;
+        }
+        #img-02{
+            display: flex;
+            border: 5px solid black;
+            width: 150px;
+            height: 100px;
+        }
+        #img-03{
+            display: flex;
+            border: 5px solid black;
+            width: 150px;
+            height: 100px;
+        }
+        #img-04{
+            display: flex;
+            width: 150px;
+            height: 100px;
+            border: 5px solid black;
+        }
+        #flex{
+            display: flex;
+            max-width: 100%;
+            padding: 20px 150px 10px;
+
+
+        }
+        #quadro {
+            padding-top: 0px;
+            position:relative;
+            flex-wrap: wrap;
+            right: -300px;
+            display: flex;
+            width: 500px;
+            height: 500px;
+            border: 5px solid black
+        }
+        #quadro img{
+            width: 400px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        footer{
+            padding: 100px;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a id="logo" href="#"><img src="#" alt="Logo"></a>
+<nav>
+<ul class="menu">
+    
+    <li><a href="#"> sobre</a></li>
+    <li><a href="#"> contato</a></li>
+    <li><a href="#"> login</a></li>
+</ul>
+</nav>
+
+    </header>
+    <section id="flex">
+        <div>
+        <img onmouseover="mudaFoto('../imagens/bebê-menina.jpg')" id="img-01" src="../imagens/bebê-menina.jpg" alt="">
+        </div>
+        <div>
+        <img onmouseover="mudaFoto('../imagens/bebê-menino.jpg')" id="img-02" src="../imagens/bebê-menino.jpg" alt="">
+        </div>
+        <div>
+        <img onmouseover="mudaFoto('../imagens/jovem-homem.jpg')" id="img-03" src="../imagens/jovem-homem.jpg" alt="">
+        </div>
+        <div>
+        <img onmouseover="mudaFoto('../imagens/jovem-mulher.jpg')" id="img-04" src="../imagens/jovem-mulher.jpg" alt="">
+        </div>
+
+    </section>
+    <section >
+        <img id="quadro"src="../imagens/adulto-mulher.jpg" alt="">
+    </section>
+    <script>
+
+        function mudaFoto(foto){
+        document.getElementById('quadro').src =foto;
+    
+    }
+    </script>
+    <footer>
+     Editado 10/10/2022 <br>
+        &copy;by Alex moreira 
+    </footer>
+</body>
+</html>
