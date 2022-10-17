@@ -215,42 +215,16 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click',toggleMenu)
 
-let i = 0  //start point
-    let img = []
-    let time = 3000
-
-    //image list
-
-    img[0] = './img/pexels-craig-adderley-1525612.jpg'
-    img[1] = './img/pexels-george-desipris-858241.jpg'
-    img[2] = './img/pexels-luis-dalvan-1770809.jpg'
-    img[3] = './img/pexels-pixabay-3871.jpg'
-
-    //Change image
-
-    function changeimages() {
-        document.slide.src = img[i]
-
-        if(i < img .length - 1) {
-            i++
-        } else {
-            i = 0
-        }
-        setTimeout("changeimages()",time)
-    }
-    window.onload = changeimages;
-
-
     let i = 0  //start point
     let img = []
     let time = 3000
 
     //image list
 
-    img[0] = '.img/pexels-craig-adderley-1525612.jpg'
-    img[1] = '.img/pexels-george-desipris-858241.jpg'
-    img[2] = '.img/pexels-luis-dalvan-1770809.jpg'
-    img[3] = '.img/pexels-pixabay-3871.jpg'
+    img[0] = 'img/pexels-craig-adderley-1525612.jpg'
+    img[1] = 'img/pexels-george-desipris-858241.jpg'
+    img[2] = 'img/pexels-luis-dalvan-1770809.jpg'
+    img[3] = 'img/pexels-pixabay-3871.jpg'
 
     //Change image
 
