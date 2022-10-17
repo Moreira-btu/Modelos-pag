@@ -6,6 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu para mobile tbm</title>
    <style>
+     img#slide-01  {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px 300px ;
+            margin-left: 20%;
+            width: 60%;
+            height: 400px;
+            height: 60%;
+            box-shadow: 30px 30px 30px black;
+            } 
+            img#slide-01 li {
+                transition: all 3s ease-in;
+       
+            }
+
+
+        img#slide-01 :hover{
+            box-shadow: 50px 50px 50px #666;
+
+
+        }
+        section#flex {
+            flex: 1 1 200px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: -50px;
+        }
     body, ul {
         margin: 0px;
         padding: 0px;
@@ -213,8 +241,35 @@ let i = 0  //start point
     window.onload = changeimages;
 
 
+    let i = 0  //start point
+    let img = []
+    let time = 3000
+
+    //image list
+
+    img[0] = '.img/pexels-craig-adderley-1525612.jpg'
+    img[1] = '.img/pexels-george-desipris-858241.jpg'
+    img[2] = '.img/pexels-luis-dalvan-1770809.jpg'
+    img[3] = '.img/pexels-pixabay-3871.jpg'
+
+    //Change image
+
+    function changeimages() {
+        document.slide.src = img[i]
+
+        if(i < img .length - 1) {
+            i++
+        } else {
+            i = 0
+        }
+        setTimeout("changeimages()",time)
+    }
+    window.onload = changeimages;
+
+    
 
     </script>
+
     
 </body>
 </html>
